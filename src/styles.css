@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #386bc0;
+  --secondary-color: rgb(239, 241, 242);
+  --competed-color: green;
+  --todo-text-color: black;
+  --todo-background-color: #f7f7f7;
+  --button-active-color: red;
+  --todo-shadow-color: rgba(0, 0, 0, 20%);
+}
+
+/*:root {
+  --primary-color: #9a031e;
+  --secondary-color: #e36414;
+  --competed-color: #ee2e31;
+  --todo-text-color: rgb(158, 42, 43);
+  --todo-background-color: #f7f7f7;
+  --button-active-color: #1d7874;
+  --todo-shadow-color: rgba(0, 0, 0, 20%);
+}*/
+
+.MainView {
+  text-align: center;
+  background-color: var(--secondary-color);
+  width: 700px;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.TodoItemTextDeleted {
+  text-decoration: line-through;
+}
+
+.TodoItemTextCompleted {
+  color: var(--competed-color);
+  font-weight: bold;
+}
+
+.TodoItemText {
+  color: var(--todo-text-color);
+}
+
+.TitleView {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.TitleIconStyle {
+  color: var(--primary-color);
+  border: var(--primary-color);
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+}
+
+.TitleStyle {
+  font-size: 25px;
+  margin-left: 10px;
+  color: var(--primary-color);
+  font-weight: bold;
+  vertical-align: center;
+  text-decoration: underline;
+}
+
+.RowStyle {
+  margin-top: 10px;
+}
+
+.RowInputStyle {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.RowInputStyle1st {
+  text-align: left;
+}
+
+.RowInputStyle2st {
+  text-align: right;
+}
+
+.InputText {
+  padding: 5px;
+  border-radius: 4px;
+  border: 3px solid var(--primary-color);
+  width: 300px;
+}
+
+.ButtonStyle {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 6px;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  margin-left: 5px;
+}
+
+.BtnStyle2 {
+  font-size: 12px;
+  border-radius: 30px;
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  border-width: 1px;
+  font-weight: bold;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.BtnStyle2:hover {
+  font-size: 12px;
+  border-radius: 30px;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background: var(--secondary-color);
+  border-width: 1px;
+  font-weight: bold;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.BtnStyle2:focus {
+  font-size: 12px;
+  border-radius: 30px;
+  color: var(--button-active-color);
+  border-color: var(--primary-color);
+  background: var(--secondary-color);
+  border-width: 1px;
+  font-weight: bold;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.RowItemStyle {
+  line-height: 40px;
+  text-align: center;
+  background-color: var(--todo-background-color);
+  border-radius: 4px;
+  margin: 2px 2px 10px 2px;
+  padding-left: 12px;
+  box-shadow: 0 0.5rem 1.2rem var(--todo-shadow-color);
+  display: grid;
+  grid-template-columns: 16px auto 100px;
+  grid-gap: 10px;
+}
+
+.RowItemStyleText {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.RowItemStyleInput {
+  width: 95%;
+}
